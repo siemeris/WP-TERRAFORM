@@ -1,0 +1,15 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/wp-repo/wp-img:latest', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/wp-repo/wp-img:latest']
+# lanzamiento en Google Cloud Deploy
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args:
+    - 'run'
+    - 'deploy'
+    - 'my-wordpress-app'
+    - '--image=europe-southwest1-docker.pkg.dev/${PROJECT_ID}/wp-repo/wp-img:latest'
+    - '--region=europe-southwest1'
+    - '--platform=managed'

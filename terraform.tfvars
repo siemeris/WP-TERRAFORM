@@ -1,0 +1,6 @@
+project_id = "wpentrega"
+region     = "europe-southwest1"
+owner      = "siemeris"
+repository_name = "WP-GCLOUD-42-ALT"
+branch_name = "master"
+function_bucket_name = "wpentrega-func-bucket"

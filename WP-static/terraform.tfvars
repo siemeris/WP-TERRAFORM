@@ -1,0 +1,6 @@
+project     = "wpstatic-420120"
+region      = "europe-southwest1"
+bucket_name = "ism-wpstatic"
+github_owner = "siemeris"
+github_repo  = "42-ALT-WP-Sta"
+github_branch = "^main$"

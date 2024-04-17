@@ -1,0 +1,15 @@
+{
+  "name": "turnoff_function",
+  "version": "1.0.0",
+  "description": "turnoff_function",
+  "main": "index.js",
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
