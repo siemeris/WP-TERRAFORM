@@ -21,6 +21,6 @@ La persona de marketing tiene su wordpress en offline. Cuando quiera publicar un
 
 ## Estrucutra del proyecto
 El proyecto se encuentra dividido en tres repositorios:
-- [Infraestructura](https://github.com/siemeris/42-ALT-Terraform)
-- [Wordpress Offline](https://github.com/siemeris/WP-GCLOUD-42-ALT)
-- [Wordpress Estático](https://github.com/siemeris/42-ALT-WP-Sta)
+- [Infraestructura: WP-TERRAFORM](https://github.com/siemeris/WP-TERRAFORM)
+- [Wordpress Offline: WP-GCLOUD-42-ALT](https://github.com/siemeris/WP-GCLOUD-42-ALT)
+- [Wordpress Estático: 42altwpstatic](https://github.com/siemeris/42altwpstatic)
