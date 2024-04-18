@@ -1,8 +1,10 @@
+# Target del Cloud Deploy, destino del despliegue
 resource "google_clouddeploy_target" "cloud_run_target" {
   name     = "cloud-run-target"
   project  = var.project_id
   location = var.region
 
+  #COnfiguramos como se ejecutan las operaciones de despliegue esepecificando un WorkerPool
   execution_configs {
     worker_pool = "projects/${var.project_id}/locations/${var.region}/workerPools/default"
     usages = ["RENDER", "DEPLOY"]
